@@ -19,7 +19,7 @@ RUN python -m venv /py && \
     if [ $DEV = "true" ]; \
         then /py/bin/pip install -r /tmp/requirement.dev.txt ; \
     fi && \
-    rm -rf /tmp &&\
+    rm -rf /tmp && \
     apk del .tmp-build-deps && \
     adduser \
         --disabled-password \
